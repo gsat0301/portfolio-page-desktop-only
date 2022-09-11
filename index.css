@@ -1,6 +1,7 @@
 
 *{
     box-sizing: border-box;
+    scroll-behavior:smooth;
 
 }
 
@@ -8,7 +9,7 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     background:#eee;
-    scroll-behavior: smooth;
+
     
 }
 
@@ -20,35 +21,25 @@ nav{
     background: linear-gradient(to right, #fff 10%, #999);
     flex-basis: 100vw;
 }
-
-
-
-
 a.nav__item{
+    text-align: center;
+    margin-left: 4em;
+    margin-right: 4em;
     font-size: 1.25em;
     flex-basis:100vw;
     text-decoration: none;
     color: #222;
-    flex-basis: 100vw;
     font-style: italic;
-    text-align: center;
-    border-radius: 2em;
-    border:transparent;
     transition: 0.2s;
+    
 }
-
-
 a.nav__item:hover{
-    background: linear-gradient(to right,#fff 10%, #888);
-    border-radius: 2em;
-    border: solid #222;
+    border-bottom: solid #222 0.1em;
+    border-radius: 0.5em;
+    border-right: solid #222 0.1;
+    background: #eee;
 
 }
-
-
-
-
-
 nav a img{
     height: 65px;
 }
@@ -254,3 +245,205 @@ a.footer-link{
 a.footer-link__2{
     color: #777;
 }
+
+@media (max-width: 900px) {
+
+    div.tarjeta{
+        display: inline-block;
+        padding: 1.75em;
+        background: linear-gradient(to bottom, #999, #fff);
+        border-radius: 1em;
+        margin: auto;
+        
+    }
+    
+    img.vehiculo{
+        width: 18em;
+        height: 16em;
+        border-radius: 2em;
+        scroll-snap-align: center;
+    }
+
+    div.flexbox{
+        display: flex;
+        flex-basis: 100vw;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+       
+    }
+     p.tarjeta__p{
+        flex-wrap: nowrap;
+        text-align: center;
+        font-style: italic;
+     }
+     nav{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        background: linear-gradient(to right, #fff 10%, #999);
+        flex-basis: 100vw;
+    }
+
+    nav a img{
+        display: flex;
+        height: 65px;
+        order: 1;
+    }
+    form input.barra-de-busqueda{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-right: 1.8em;
+        width: 20em;
+        order: 2;
+        border-radius: 2em;
+        background: #ddd;
+        font-style: italic;
+        border: solid #222 2px;
+        
+    }
+
+    a.nav__item{
+        display: flex;
+        order: 3;
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 1.25em;
+        padding: 0.5em;
+        margin-left: 10em;
+        margin-right: 10em;
+        flex-basis:100vw;
+        text-decoration: none;
+        color: #222;
+        font-style: italic;
+        transition: 0.2s;
+        display: none;
+    
+    }
+    div.container__h1{
+        background-image:url(/Media/white-car-vintage-transportation-vehicle-auto-970933-pxhere.com.jpg);
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: 40vh;
+        opacity: 95%;
+    }
+    
+    h1{
+        display:flex;
+        font-size: 1.8em;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        height:3.5em;
+        width: 105vw;
+        font-style: italic;
+        border-bottom: solid #222 5px;
+        color: #222;
+        border-bottom-right-radius: 20em;
+        background: linear-gradient(to right, #fff 10%, #999);
+    }
+
+    img.imagen-de-seccion{
+        
+        height: 18em;
+        width: 20em;
+        border-radius: 1.5em;
+     }
+    
+     h2.row{
+        display: flex;
+        margin-left: 2.5em;
+        
+     }
+    
+     h2.h2-reverse{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 2.4em;
+    
+     }
+    
+     div.container__1{
+        margin-left: 3.5em;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-basis: 100vw;
+     }
+    
+     div.container__2{
+        margin: 2.5em;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        flex-basis: 100vw;
+     }
+    
+     div.container__3{
+        margin-left: 3.2em;
+        
+        display: flex;
+        flex-wrap: nowrap;
+        flex-basis: 100vw;
+     }
+
+    div.container__flex{
+
+        display: none;
+    }
+    
+
+    
+    footer{
+        display:flex;
+        flex-basis: 100vw;
+        flex-wrap: nowrap;
+        background: linear-gradient(to left, #eee, #999 );
+
+        border-top: solid #222 5px;
+        flex-grow: 2;
+        flex-shrink: 2;
+    
+    }
+    
+    
+    div.About{
+        margin: 1em;
+        border-left:solid 2px #777;
+        flex-grow: 2;
+        flex-shrink: 2;
+        color: #777;
+        
+    }
+    
+    div.Indice{
+        display: flex;
+        flex-direction: column;
+        border-left:solid 2px #999;
+        margin: 1em;
+        flex-grow: 2;
+        flex-shrink: 2;
+    
+    }
+    
+    
+    div.social-media{
+        display: flex;
+        margin:1em;
+    
+    }
+    
+    i{
+        padding: 0.25em;
+        margin-top: 2em;
+    }
+    
+    a.footer-link{
+        color: #999;
+    }
+    
+    a.footer-link__2{
+        color: #777;
+    }
+    
+    }
