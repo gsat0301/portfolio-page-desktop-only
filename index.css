@@ -53,7 +53,10 @@ form input.barra-de-busqueda{
 }
 
 div.container__h1{
-    background-image:url(/Media/white-car-vintage-transportation-vehicle-auto-970933-pxhere.com.jpg);
+    background-image:url(/Users/Indatech/Desktop/Material\ programacion/Proyectos/Pagina\ responsive\ Resurrection\ Cars/Media/white-car-vintage-transportation-vehicle-auto-970933-pxhere.com.jpg);
+
+    /*al estar online cambiar Media/white-car-vintage-transportation-vehicle-auto-970933-pxhere.com.jpg*/
+    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -444,6 +447,4 @@ a.footer-link__2{
     
     a.footer-link__2{
         color: #777;
-    }
-    
     }
